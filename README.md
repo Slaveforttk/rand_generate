@@ -7,9 +7,9 @@
 
 你可以在GitHub上找到本项目并下载所有的算法和查看日志
 
-Slave
+[Slave](https://github.com/Slaveforttk/rand_generate)
 
-使用手册
+[使用手册](https://www.cnblogs.com/zjmforttk/p/18095748)
 
 ### *计划*
 
@@ -56,7 +56,7 @@ Slave
 
 考虑到需求主要有两个：生成随机四则运算和对比题目与答案
 
-此处仅给出接口大致使用，具体代码和难点分析请查看另一个手册
+此处仅给出接口大致使用，具体代码和难点分析请查看[另一个手册](https://www.cnblogs.com/zjmforttk/p/18095748)
 
 ##### 生成器接口设计
 
@@ -103,7 +103,7 @@ open_comparator():用于构建一个图形化界面，用于对比器的调用
 
 仅仅针对图形化之前进行测试，图形化测试没有意义，此处仅给出一个测试代码
 
-其他测试可以在手册中找到
+其他测试可以在[手册](https://www.cnblogs.com/zjmforttk/p/18095748)中找到
 
 这个测试是针对compare函数中用于处理真分数与假分数的两个函数，其对compare函数有很大影响
 
@@ -128,7 +128,8 @@ if __name__ == '__main__':
 
 结果如下：
 
-![image-20240325222934602](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240325222934602.png)
+![](https://img2024.cnblogs.com/blog/3397503/202403/3397503-20240326022704571-291424972.png)
+
 
 #### *效能分析*
 
@@ -136,23 +137,27 @@ if __name__ == '__main__':
 
 更改前
 
-![image-20240325223602965](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240325223602965.png)
+![](https://img2024.cnblogs.com/blog/3397503/202403/3397503-20240326022721165-1597296104.png)
+
 
 两个文件储存两个UI，之后在一个文件中调用使得UI出现问题即无法正常返回主界面
 
 更改后
 
-![image-20240325223646513](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240325223646513.png)
+![](https://img2024.cnblogs.com/blog/3397503/202403/3397503-20240326022734303-2095948654.png)
+
 
 给出函数耗费时间
 
 可见主函数使用时间最长
 
-![image-20240326015251345](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240326015251345.png)
+![](https://img2024.cnblogs.com/blog/3397503/202403/3397503-20240326022822411-1859998751.png)
+
 
 给出函数调用图
 
-![homeworkTest.py7](C:\Users\ASUS\OneDrive\桌面\homeworkTest.py7.png)
+![](https://img2024.cnblogs.com/blog/3397503/202403/3397503-20240326022842568-1237465418.png)
+
 
 这次项目各处运行很快，便没有使用模块测试耗费时间和优化运行效率
 
